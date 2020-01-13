@@ -1,4 +1,3 @@
-package quicksort;
 
 public class QuickSort {
  static void quickSort (int a[], int lo, int hi){
@@ -27,14 +26,17 @@ public class QuickSort {
     public static void main(String[] args) {
         int tabInt[]={24,17,18,15,22,26, 13, 21, 16, 28};
         int i,n=10;
-        
+        System.out.println("Sebelum Sorting");
             for(i=0;i<n;i++){
+
                 System.out.print(tabInt[i]+ " ");
            }
+		
             System.out.print("\n");
         quickSort(tabInt,0,n-1);
-        
+        System.out.println("Sesudah Sorting");
         for(i=0;i<n;i++){
+		
             System.out.print(tabInt[i]+" ");
         }
 
